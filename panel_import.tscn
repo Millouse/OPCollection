@@ -1,0 +1,263 @@
+[gd_scene load_steps=4 format=3 uid="uid://bb0nukc8xpnrs"]
+
+[ext_resource type="Script" path="res://scenes/panel_import.gd" id="1_ifkrw"]
+[ext_resource type="Script" path="res://scenes/couleur_boutons.gd" id="1_kwgwq"]
+[ext_resource type="Script" path="res://scenes/cost_boutons.gd" id="3_su7jv"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ifkrw")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.507
+anchor_top = 0.5
+anchor_right = 0.507
+anchor_bottom = 0.5
+offset_left = -891.44
+offset_top = -493.0
+offset_right = 889.56
+offset_bottom = 482.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.560955, 0.560955, 0.560955, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+offset_left = 130.0
+offset_top = 132.0
+offset_right = 513.0
+offset_bottom = 201.0
+theme_type_variation = &"HeaderLarge"
+theme_override_font_sizes/font_size = 30
+text = "Nom de la carte"
+
+[node name="CardName" type="LineEdit" parent="."]
+layout_mode = 1
+offset_left = 101.0
+offset_top = 178.0
+offset_right = 1745.0
+offset_bottom = 255.0
+theme_override_font_sizes/font_size = 40
+placeholder_text = "Luffy"
+clear_button_enabled = true
+select_all_on_focus = true
+
+[node name="LabelCouleur" type="Label" parent="."]
+layout_mode = 0
+offset_left = 114.0
+offset_top = 275.0
+offset_right = 497.0
+offset_bottom = 344.0
+theme_type_variation = &"HeaderMedium"
+text = "Couleur"
+
+[node name="CouleurBoutons" type="HBoxContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 97.0
+offset_top = -245.0
+offset_right = -980.0
+offset_bottom = -160.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 22
+script = ExtResource("1_kwgwq")
+
+[node name="Rouge" type="CheckButton" parent="CouleurBoutons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Rouge"
+
+[node name="Bleu" type="CheckButton" parent="CouleurBoutons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Bleu"
+
+[node name="Vert" type="CheckButton" parent="CouleurBoutons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Vert"
+
+[node name="Jaune" type="CheckButton" parent="CouleurBoutons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Jaune
+"
+
+[node name="Noir" type="CheckButton" parent="CouleurBoutons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Noir"
+
+[node name="Violet" type="CheckButton" parent="CouleurBoutons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Violet"
+icon_alignment = 1
+expand_icon = true
+
+[node name="SearchButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1679.0
+offset_top = 467.0
+offset_right = 1811.0
+offset_bottom = 526.0
+text = "Search"
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 121.0
+offset_top = 72.0
+offset_right = 253.0
+offset_bottom = 131.0
+text = "Back"
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[node name="LabelCost" type="Label" parent="."]
+layout_mode = 2
+offset_left = 124.0
+offset_top = 408.0
+offset_right = 179.0
+offset_bottom = 442.0
+theme_type_variation = &"HeaderMedium"
+text = "Coût"
+
+[node name="CostBoutons" type="HBoxContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+offset_left = 111.0
+offset_top = 434.0
+offset_right = 938.0
+offset_bottom = 519.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 16
+script = ExtResource("3_su7jv")
+
+[node name="1" type="CheckButton" parent="CostBoutons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "1
+"
+
+[node name="2" type="CheckButton" parent="CostBoutons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "2
+"
+
+[node name="3" type="CheckButton" parent="CostBoutons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "3"
+
+[node name="4" type="CheckButton" parent="CostBoutons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "4
+"
+
+[node name="5" type="CheckButton" parent="CostBoutons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "5
+"
+
+[node name="6" type="CheckButton" parent="CostBoutons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "6"
+
+[node name="7" type="CheckButton" parent="CostBoutons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "7
+"
+
+[node name="8" type="CheckButton" parent="CostBoutons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "8
+"
+
+[node name="9" type="CheckButton" parent="CostBoutons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "9
+"
+
+[node name="10" type="CheckButton" parent="CostBoutons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "10
+"
+
+[node name="MarginContainer" type="MarginContainer" parent="CostBoutons"]
+layout_mode = 2
+
+[node name="Line2D3" type="Line2D" parent="."]
+position = Vector2(104, 269)
+points = PackedVector2Array(998, -1, 267, -1, 8, -1)
+width = 2.0
+
+[node name="Line2D2" type="Line2D" parent="."]
+position = Vector2(106, 557)
+points = PackedVector2Array(1713, -2, 8, -1)
+width = 2.0
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2(112, 391)
+points = PackedVector2Array(998, -1, 8, -1)
+width = 2.0
+
+[node name="Cards" type="ScrollContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.505
+anchor_top = 0.731
+anchor_right = 0.505
+anchor_bottom = 0.731
+offset_left = -865.6
+offset_top = -220.48
+offset_right = 2614.4
+offset_bottom = 661.52
+scale = Vector2(0.5, 0.5)
+
+[node name="Grid" type="HBoxContainer" parent="Cards"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[connection signal="launch_search" from="." to="CouleurBoutons" method="_on_control_launch_search"]
+[connection signal="launch_search" from="." to="CostBoutons" method="_on_control_launch_search"]
+[connection signal="text_submitted" from="CardName" to="." method="_on_card_name_text_submitted"]
+[connection signal="pressed" from="CouleurBoutons/Rouge" to="CouleurBoutons" method="_on_rouge_pressed"]
+[connection signal="pressed" from="CouleurBoutons/Bleu" to="CouleurBoutons" method="_on_bleu_pressed"]
+[connection signal="pressed" from="CouleurBoutons/Vert" to="CouleurBoutons" method="_on_vert_pressed"]
+[connection signal="pressed" from="CouleurBoutons/Jaune" to="CouleurBoutons" method="_on_jaune_pressed"]
+[connection signal="pressed" from="CouleurBoutons/Noir" to="CouleurBoutons" method="_on_noir_pressed"]
+[connection signal="pressed" from="CouleurBoutons/Violet" to="CouleurBoutons" method="_on_violet_pressed"]
+[connection signal="pressed" from="SearchButton" to="." method="_on_search_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="CostBoutons/1" to="CostBoutons" method="_on_one_pressed"]
+[connection signal="pressed" from="CostBoutons/2" to="CostBoutons" method="_on_two_pressed"]
+[connection signal="pressed" from="CostBoutons/3" to="CostBoutons" method="_on_three_pressed"]
+[connection signal="pressed" from="CostBoutons/4" to="CostBoutons" method="_on_four_pressed"]
+[connection signal="pressed" from="CostBoutons/5" to="CostBoutons" method="_on_five_pressed"]
+[connection signal="pressed" from="CostBoutons/6" to="CostBoutons" method="_on_six_pressed"]
+[connection signal="pressed" from="CostBoutons/7" to="CostBoutons" method="_on_sevenn_pressed"]
+[connection signal="pressed" from="CostBoutons/8" to="CostBoutons" method="_on_eight_pressed"]
+[connection signal="pressed" from="CostBoutons/9" to="CostBoutons" method="_on_nine_pressed"]
+[connection signal="pressed" from="CostBoutons/10" to="CostBoutons" method="_on_ten_pressed"]
